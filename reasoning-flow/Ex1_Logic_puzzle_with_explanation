@@ -1,0 +1,53 @@
+# Exercise 1: Logic Puzzle with Explanation
+A logic puzzle is a problem that tests your reasoning ability rather than your
+ memorization or calculation skills. Instead of using formulas or code, you use clues, 
+ patterns, and elimination to figure out the correct answer. Logic puzzles often 
+ involve scenarios like matching people to jobs, solving riddles, identifying 
+ truth-tellers and liars, arranging objects in order, or finding hidden relationships 
+ between pieces of information. The goal is to carefully analyze the given clues, 
+ make logical deductions, eliminate impossible options, and arrive at a single consistent
+ solution.
+
+# 1. Write a logic puzzle (e.g., "Alice is older than Bob, Bob is older than Carol.  Who  is the youngest?").
+# 2. Prompt the model: "Explain your reasoning before giving the final answer."
+# 3. Verify that the model provides step-by-step reasoning followed by the correct answer.
+
+# Prompt:
+Write a logic puzzle ("Ugbala is older than Agbo, Sunday is older than Flora. Who is the youngest?"). 2. "Explain your reasoning before giving the final answer." 3. Provides step-by-step reasoning followed by the correct answer.
+
+# Output:
+Logic Puzzle
+
+Four people — Ugbala, Agbo, Sunday, and Flora — are of different ages.
+
+# Clues:
+Ugbala is older than Agbo.
+Sunday is older than Flora.
+Agbo is older than Sunday.
+
+#Question: Who is the youngest?
+
+# Reasoning
+Let's arrange them from oldest → youngest using the clues.
+
+From clue 1:
+Ugbala > Agbo
+
+From clue 3:
+Agbo > Sunday
+
+Combining with the first clue gives:
+Ugbala > Agbo > Sunday
+
+From clue 2:
+Sunday > Flora
+
+Now add Flora to the chain:
+
+Ugbala > Agbo > Sunday > Flora
+
+This means Flora is younger than Sunday, Agbo, and Ugbala.
+
+# Final Answer
+- Flora is the youngest.
+

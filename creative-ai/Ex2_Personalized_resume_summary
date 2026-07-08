@@ -1,0 +1,20 @@
+# Exercise 2: Personalized Resume Summary
+ Objective: Apply prompting to professional use cases.
+1. Write a prompt that generates a resume summary based on role and skills. Example: "Create a 3-sentence professional summary for a software engineer skilled in Python and cloud systems."
+2. Adjust the prompt for a different role (e.g., teacher, designer, marketer).
+2. Compare how the outputs change depending on the role.
+
+# Prompt:
+Create a 3-sentence professional summary for a software engineer skilled in Python and cloud systems". Adjust your answer accordingly to a role of a "Teacher" skilled in teaching and mentoring. Compare how the outputs change depending on the role.
+
+# Output:
+
+# 1. Professional Summary — Software Engineer (Python & Cloud Systems)
+Innovative Software Engineer specializing in Python development and cloud infrastructure. Skilled in building scalable applications, designing APIs, and deploying reliable services on cloud platforms. Strong problem-solver who improves system performance, automates processes, and collaborates effectively within agile teams.
+
+# 2. Professional Summary — Teacher (Teaching & Mentoring)
+Dedicated Teacher focused on teaching and mentoring students to achieve academic and personal growth. Experienced in creating structured lesson plans, guiding learners through challenges, and encouraging critical thinking and confidence. Committed to supporting diverse learning needs and fostering a positive, engaging classroom environment.
+
+# 3. Comparison of the Outputs
+The Software Engineer summary centers on technical capability, system building, and delivering software solutions, using industry-focused terms like scalability, APIs, and performance. The Teacher summary shifts toward human interaction, emphasizing communication, guidance, student development, and learning outcomes. Although both are professional summaries, the engineer version highlights production and technical impact, while the teacher version highlights education, mentorship, and personal development.
+

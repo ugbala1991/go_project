@@ -1,0 +1,56 @@
+# Exercise 3: Prompt Transformation with Patterns
+Objective: Strengthen weak prompts using patterns.
+
+1. Take a vague or under-specified prompt (e.g., "Write about climate change.").
+2. Transform it using instructional or comparative patterns:
+   - Instructional: "Write a 200-word explanation of climate change for high school learners."
+   - Comparative: "Compare the effects of climate change on coastal vs inland regions in 5 bullet points."
+3. Document the improvement in clarity and usefulness of the outputs.
+
+# Prompt:
+"Write about Climate change". Transform it using instructional or comparative patterns: Instructional: "Write a 200-word explanation of climate change for high school learners". Comparative: "Compare the effects of climate change on coastal vs inland regions in 5 bullet points". Document the improvement in clarity and usefulness of the outputs.
+
+
+# 1. Vague/Weak Prompt:
+“Write about climate change.”
+
+# Output:
+Climate change refers to long-term shifts in global temperatures and weather patterns. It is largely caused by human activities such as burning fossil fuels, deforestation, and industrial processes. These activities release greenhouse gases like carbon dioxide into the atmosphere, trapping heat and warming the planet. Climate change leads to rising sea levels, extreme weather events, droughts, and melting ice caps. Governments and organizations are working to reduce emissions and promote renewable energy sources to address the issue.
+
+# Problem With This Prompt
+-No word limit
+-No audience specified
+-No format specified
+-No focus area
+-Too broad
+-The result is general and unfocused.
+
+# 2. Transforming the Prompt:
+🔹 Instructional Pattern: Write a 200-word explanation of climate change for high school learners.
+
+# Output:
+Climate change is the long-term change in Earth's average temperature and weather patterns. While climate has changed naturally in the past, scientists agree that today's climate change is mainly caused by human activities. When we burn fossil fuels like coal, oil, and gas for energy, we release greenhouse gases such as carbon dioxide into the atmosphere. These gases trap heat from the sun, causing the planet to warm.
+This warming affects the environment in many ways. Glaciers and polar ice are melting, which causes sea levels to rise. Some regions experience stronger storms and floods, while others face longer droughts and heatwaves. These changes can affect food production, water supply, and wildlife habitats.
+To slow climate change, countries are investing in renewable energy sources like solar and wind power. Individuals can also help by conserving energy and reducing waste.
+
+# Transforming the Prompt Cont...
+🔹 # Comparative Pattern: Compare the effects of climate change on coastal vs inland regions in 5 bullet points.
+
+# Output:
+- Coastal regions face rising sea levels, while inland regions experience more heatwaves and droughts.
+- Coastal areas are vulnerable to flooding and stronger hurricanes; inland areas may suffer from water shortages.
+- Saltwater intrusion affects coastal agriculture, while inland farming faces soil dryness and reduced rainfall.
+- Coastal infrastructure risks erosion; inland infrastructure faces wildfire damage in some regions.
+- Coastal communities may face displacement due to flooding, while inland populations may migrate due to extreme heat.
+
+# 3. Documenting the Improvement
+
+# Feature	            Weak Prompt	      Instructional Prompt	            Comparative Prompt
+Audience defined	   ❌	                  ✔ (high school learners)	      ✔ (general but structured comparison)
+Length controlled	   ❌	                  ✔ (200 words)	                  ✔ (5 bullet points)
+Structure	         ❌	                  Paragraph explanation	          Bullet-point comparison
+Focus	               Broad	                 Educational clarity	            Specific regional comparison
+Usefulness	       General overview	        Suitable for classroom use	      Useful for analysis & exams
+
+# Final Insight
+The original prompt produces a generic overview, while the instructional version improves clarity by defining audience and length, and the comparative version improves analytical usefulness by forcing structured contrast.

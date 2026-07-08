@@ -1,0 +1,65 @@
+# Exercise 3: Chaining Prompts for Agent Flow
+Objective: Combine multiple prompts to simulate a tool-using agent.
+1. Step 1 prompt: Ask for a user's query (e.g., “What's the temperature in Paris?”).
+2. Step 2 prompt: Simulate a call to the weather API.
+3. Step 3 prompt: Format the final answer back to the user.
+4' Document the chained process and outputs
+
+# Prompt:
+“What's the temperature in Paris?” Simulate a call to the weather API. Format the final answer back to the user. Document the chained process and outputs.
+
+# Step 1 — User Request:
+# User Input
+- What's the temperature in Paris?
+
+# The system first detects:
+Intent → weather request
+Entity → location = Paris
+Required data → current temperature
+
+# Internal Output (Intent Extraction)
+{
+  "intent": "get_weather",
+  "location": "Paris",
+  "country": "France"
+}
+
+# Step 2 — Simulated Weather API Call
+The system now calls a weather service
+
+API Request (simulated)
+GET /weather?city=Paris&units=metric
+API Response (simulated)
+
+{
+  "city": "Paris",
+  "temperature": 18,
+  "feels_like": 17,
+  "humidity": 72,
+  "condition": "Partly cloudy"
+}
+
+
+# Step 3 — AI Formats the Answer
+The model now converts raw machine data into human language.
+
+# Transformation
+    Raw data:
+    temperature: 18
+    condition: Partly cloudy
+
+# Natural response:
+
+The current temperature in Paris is 18°C with partly cloudy skies and about 72% humidity.
+
+# Step 4 — Final Answer to the User
+# User sees:
+“Right now in Paris, it's about 18°C and partly cloudy. It feels like 17°C with moderate humidity.”
+
+# Step 5 — Documenting the Chained Process
+
+#   Stage	        What Happens	             Output Type
+1. Understanding	Detect intent & location	Structured JSON
+2. Tool Use	        Query weather API	        Raw machine data
+3. Reasoning	    Interpret the data	        Structured info
+4. Generation	    Write natural reply	        Human sentence

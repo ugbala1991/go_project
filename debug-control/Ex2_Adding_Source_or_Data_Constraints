@@ -1,0 +1,59 @@
+# Exercise 2: Adding Source or Data Constraints
+  Objective: Force responses to be tied to given material.
+1. Write a factual question prompt.
+- Add instructions such as:
+-“Cite the source in your answer.”
+2. “Use only the text provided below.”
+3. Provide a short passage and check that the answer stays within the provided text.
+
+# Factual Question Prompt:
+How has the global average temperature changed over the past 50 years?
+
+# Short Passage:
+Over the past 50 years, the Earth has experienced a sustained and accelerating increase in global surface temperatures, marking the most rapid warming period in at least the last 2,000 years. Since 1975, the planet has warmed at an average rate of roughly $0.20°C$ ($0.36°F$) per decade, which is more than three times the average rate seen since 1850. This trend has culminated in the last ten years (2015-2024) being the warmest decade on record, with 2024 recently setting a new historical peak at approximately $1.46°C$ above pre-industrial levels. The primary driver of this warming is the accumulation of greenhouse gases—most notably carbon dioxide and methane—resulting from human activities such as burning fossil fuels, industrial manufacturing, and large-scale deforestation. While natural factors like solar variability and volcanic eruptions traditionally influenced the climate, their contribution over the last half-century has been negligible compared to human-induced forcing. Interestingly, a recent spike in temperatures between 2023 and 2025 has led scientists to investigate whether warming is further accelerating, potentially due to the reduction of cooling aerosols in the atmosphere.+1This thermal shift has led to profound environmental consequences, with the impacts being most visible at the poles. The Arctic is warming three to four times faster than the global average, causing a dramatic decline in sea ice and the retreat of glaciers. Beyond the poles, these rising temperatures are fueling more frequent and intense weather extremes, including severe heatwaves, expanded desertification, and stronger storms. As the oceans absorb over 90% of the excess heat energy in the climate system, marine heatwaves and rising sea levels continue to threaten coastal ecosystems and global biodiversity.
+
+# Added instruchtion:
+How has the global average temperature changed over the past 50 years? “Cite the source in your answer.” “Use only the text provided below. Ensure that the answer stays within the provided text.
+
+# Answer (using only the provided text)
+Over the past 50 years, the global average temperature has increased significantly and at an accelerating rate. The text states that since 1975 the Earth has warmed by about 0.20 °C (0.36 °F) per decade, which is more than three times the warming rate observed since 1850. This sustained warming has led to the most recent decade (2015-2024) becoming the warmest on record, with 2024 reaching approximately 1.46 °C above pre-industrial levels. The warming is primarily linked to greenhouse gases such as carbon dioxide and methane produced by human activities including fossil-fuel burning, industrial processes, and deforestation.
+# Source: Provided passage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

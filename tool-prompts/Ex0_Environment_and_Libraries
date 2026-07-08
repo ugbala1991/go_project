@@ -1,0 +1,115 @@
+Exercise 0: Environment and libraries
+In programming, the environment is the setup in which your code runs — it includes the operating system, hardware, interpreter or runtime (like Python), system settings, and installed tools that affect how the program executes. Libraries, on the other hand, are collections of pre-written code that you import into your program to perform common tasks (such as math operations, file handling, web requests, or data analysis) instead of writing everything from scratch. In simple terms, the environment is the “workplace” your program lives in, while libraries are the “toolkits” you use inside that workplace to build functionality more efficiently.
+
+
+# Objective: Set up the environment for Python development.
+1. Install Python (latest stable version, preferably 3.9+).
+2. Verify installation by running:
+    python --version
+3. Write and execute a Hello, World! program.
+
+# Set Up the Environment
+You need three basic things:
+-Python (the interpreter)
+-A code editor
+-A terminal/command prompt
+
+#Recommended editor (beginner-friendly)
+
+# Install VS Code (Visual Studio Code)
+-Go to: https://code.visualstudio.com
+-Download
+-Install normally (Next → Next → Finish)
+-Open VS Code.
+
+#After opening:
+-Click Extensions (left sidebar squares icon)
+
+#Search: Python
+-Install the extension by Microsoft
+#This gives:
+--syntax highlighting
+--auto-completion
+--run button
+
+# Install Python (latest stable version)
+-Go to: https://www.python.org/downloads/
+-Click Download Python 3.x.x
+
+#During installation:
+✔ CHECK THE BOX
+-Add Python to PATH
+-Then click:
+-Install Now
+-Wait until it finishes.
+
+# Verify Installation
+-Open terminal:
+-or using Windows: Press: Windows Key + R
+Type:cmd
+
+#Mac/Linux
+-Open Terminal
+-type: python --version
+
+#You should see something like:
+-Python 3.xx.x
+
+#If not, try:
+-python3 --version
+
+If you see the version: Congrats; Python is correctly installed.
+
+# Write and Run “Hello, World!”
+#Step A — Create your first file
+-Open VS Code
+-Click File and then select → New File
+
+#Save it as:
+-hello.py
+-(filename must end with: .py) for python
+
+#Step B — Write the code
+-Type:
+- print("Hello, World!")
+- Save the file (Ctrl + S).
+
+#Step C — Run the program
+-Open terminal inside VS Code:
+-Terminal → New Terminal
+
+#Make sure you are in the correct folder.
+-Then run:
+- python(3) hello.py
+
+#You should see:
+
+  Hello, World!
+
+
+  ## Creating virtual environment
+
+python3 -m venv trial
+
+## Activating virtual environment
+
+source trial/bin/activate
+
+## Python version confirmation
+
+python --version
+
+3.12.3
+
+## Installing packages
+
+pip install jupyter pandas numpy
+
+
+## Testing
+
+import jupyter
+import numpy
+import pandas
+
+print("Hello, World!")

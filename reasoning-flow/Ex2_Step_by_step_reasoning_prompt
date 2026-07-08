@@ -1,0 +1,29 @@
+
+# Exercise 2: Step-by-Step Reasoning Prompt
+Objective: Use structured prompting to encourage reasoning.
+
+1. Choose a math or coding problem (e.g., "Calculate the factorial of 5").
+2. Prompt the model: "Let's think step by step before answering."
+3. Compare outputs with and without the reasoning instruction.
+
+# Prompt:
+1."Calculate the factorial of 11" 2."think step by step before answering." 3. Compare outputs with and without the reasoning instruction.
+
+# Without the reasoning instruction
+If you simply ask, “Calculate the factorial of 11,” the output is the final numerical answer directly:
+11! = 39,916,800
+No concrete explanation is provided but just the result.
+
+# With the reasoning instruction
+If you say, “Let's think step by step before answering,” the response would expand the multiplication process conceptually:
+    Therefoe:  11! means:
+11 x 10 x 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1
+Then compute progressively until final answer is reached  =  39,916,800
+
+# Comparison
+- The final answer stays exactly the same in both cases.
+- The difference is in presentation:
+- Without reasoning, you get Direct and concise output.
+- With reasoning you Step-by-step breakdown before the answer.
+So the reasoning instruction changes the explanation depth, not the mathematical result.
+

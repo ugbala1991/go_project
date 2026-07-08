@@ -1,0 +1,40 @@
+
+# Exercise 3: Image Generation Prompt Design
+    Objective: Create prompts for models that generate images.
+1. Write a descriptive prompt for an image model (e.g., "A futuristic city skyline at 
+    sunset in watercolor style.").
+2. Refine the prompt by adding constraints such as art style, colors, or perspective.
+3. Compare results between a vague prompt and a refined descriptive prompt.
+
+# Prompt:
+A futuristic city skyline at sunset in watercolor style." Refine output with constraints such as art style, colors, or perspective. Compare results between a vague prompt and a refined descriptive prompt.
+
+# Output 1: Descriptive
+A futuristic city skyline at sunset in watercolor style stretches across the horizon like a dream painted in light and motion. Tall, elegant skyscrapers rise with smooth, curved architecture, their glass surfaces reflecting the fading glow of the sun. Some towers spiral upward like silver vines, while others stand in geometric precision, connected by delicate skybridges suspended high above the ground. The skyline feels both advanced and serene, blending technological ambition with artistic grace.
+
+The sunset bathes the city in a cascade of warm hues—soft oranges melting into rose pinks, which dissolve gently into lavender and deep indigo. In watercolor form, these colors bleed seamlessly into one another, creating a fluid sky where no edge is harsh or abrupt. The brushstrokes are loose yet intentional, allowing pigments to pool and diffuse naturally across the textured paper. Light appears almost translucent, as though the sun’s final rays are dissolving into the atmosphere.
+
+Below the skyline, a calm river mirrors the glowing sky and shimmering buildings. The reflections ripple softly, rendered with diluted strokes that blur form into impression. Small floating platforms and sleek transport vessels glide silently across the water, barely disturbing its glass-like surface. Green terraces and rooftop gardens soften the metallic structures, adding touches of emerald and teal that contrast harmoniously with the warm sky.
+
+The entire scene feels peaceful despite its futuristic complexity. There are no sharp mechanical edges or overwhelming neon glare—only a balanced coexistence of innovation and nature. The watercolor technique lends the city a sense of fragility and emotion, as if this vision of the future is both hopeful and poetic. The skyline stands not just as a symbol of technological progress, but as a gentle reminder that even in tomorrow’s world, beauty and artistry remain timeless.
+
+Image link:
+https://chatgpt.com/s/m_69a02203e2e48191828801a655f428f6
+# Output 1 Issues:
+- It is simple and clear
+- High freedom for interpretation
+- No constraint
+
+# Output 2: Refined and constraints
+A futuristic city skyline at sunset painted in soft watercolor style, viewed from a slightly elevated wide-angle perspective across a calm reflective river. The sky blends warm hues of burnt orange, rose pink, and soft lavender, transitioning into deep indigo at the top. Sleek glass skyscrapers with curved and asymmetrical designs glow with subtle golden interior lights. Include delicate brush textures, visible watercolor bleeding at edges, and gentle color gradients. Add a few floating transit vehicles in the distance and light mist near the water surface. Maintain a dreamy, peaceful atmosphere with balanced composition and soft lighting.
+
+image link:
+https://gemini.google.com/share/d46e656d9da1
+# Output issues
+- It is constrained
+- Have predictable out
+- Specifies texture, lighting, composition
+- 
+
+# 3.Comparison of Results
+The vague prompt produces a general interpretation with high creative freedom but unpredictable details. The refined prompt generates a more controlled, visually cohesive image with specific colors, perspective, mood, architectural style, and compositional guidance. In order words, the vague prompt encourages randomness and variation, while the refined prompt improves clarity, consistency, and artistic precision.

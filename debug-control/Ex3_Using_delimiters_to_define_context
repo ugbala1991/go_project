@@ -1,0 +1,28 @@
+# Exercise 3: Using Delimiters to Define Context
+   Objective: Restrict responses to a specific block of text.
+1. Place a passage inside delimiters (### or triple backticks).
+2. Add instructions: “Answer using only the text inside the delimiters.”
+3. Compare the output with and without delimiters to see the effect.
+
+# 1. Prompt and Passage inside Delimiter:
+"Answer using only the text inside the delimiters. Compare the output with and without delimiters".
+    (```Climate change refers to long-term shifts in global temperatures and weather patterns. It is largely caused by human activities such as burning fossil fuels, deforestation, and industrial processes. These activities release greenhouse gases like carbon dioxide into the atmosphere, trapping heat and warming the planet. Climate change leads to rising sea levels, extreme weather events, droughts, and melting ice caps. Governments and organizations are working to reduce emissions and promote renewable energy sources to address the issue```).
+
+# Answer (with delimiters):
+Climate change is the long-term change in global temperatures and weather patterns, mainly caused by human activities such as burning fossil fuels, deforestation, and industrial processes. These activities release greenhouse gases, especially carbon dioxide, which trap heat in the atmosphere and warm the planet. Its effects include rising sea levels, extreme weather events, droughts, and melting ice caps, and governments and organizations are attempting to reduce emissions and promote renewable energy to address the problem.
+
+# Comparison: With vs Without Delimiters
+# With delimiters (``` ###):
+- The information is constrained to the provided passage.
+- The response stays grounded in the exact material.
+- No outside facts, interpretations, or additions are introduced.
+- The answer becomes more precise and controlled.
+
+# Without delimiters:
+- The response could include extra knowledge (for example: Paris Agreement, global statistics, or additional causes and 
+  effects).
+- The explanation might become longer and broader.
+- The model may add external information beyond the given text.
+
+# Key Difference
+Delimiters act like boundaries; they force the answer to rely strictly on the supplied text, while removing them allows the response to draw from general knowledge and expand beyond the passage.

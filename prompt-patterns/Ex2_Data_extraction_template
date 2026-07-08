@@ -1,0 +1,104 @@
+# Exercise 2: Data Extraction Template
+  Objective: Extract structured data from unstructured input.
+
+1. Choose an unstructured text (e.g., "John Doe, age 29, lives in Paris and works as a software engineer.").
+2. Create a template prompt:
+    "Extract the following fields from the text: Name, Age, Location, Occupation. Return the output in JSON format."
+3. Validate the output and ensure consistency across multiple inputs.
+
+# Prompt:
+Use this unstructured text ("Agbo Joshua, age 30, lives in London and works as a cybersecurity engineer."). Create a template prompt: "Extract the following fields from the text: Name, Age, Location, Occupation. Return the output in JSON format." Validate the output and ensure consistency across multiple inputs.
+
+# 1. Unstructured Text (Input)
+- “Agbo Joshua, age 30, lives in London and works as a cybersecurity engineer.”
+- This is natural language, humans understand it instantly but computers need structure.
+The goal is to convert it into machine-readable data (JSON).
+
+# 2. Template Prompt (Reusable Pattern)
+# reusable prompt:
+- Extract the following fields from the text: Name, Age, Location, Occupation.
+#Return the output strictly in valid JSON format using this schema:
+
+{
+  "name": "",
+  "age": "",
+  "location": "",
+  "occupation": ""
+}
+                    If a field is missing, return null.
+
+
+
+# Expected Output (For Your Provided Text)
+
+# Input
+- Agbo Joshua, age 30, lives in London and works as a cybersecurity engineer.
+
+# Output
+
+{
+  "name": "Agbo Joshua",
+  "age": 30,
+  "location": "London",
+  "occupation": "cybersecurity engineer"
+}
+
+# Validate Consistency Across Multiple Inputs
+    - Now we test the same prompt on different texts.
+
+# Test Case 1:
+
+# Input
+- Uche Ogba is a 25 year old nurse based in Lagos.
+
+# Output
+
+{
+  "name": "Uche Ogba",
+  "age": 25,
+  "location": "Lagos",
+  "occupation": "nurse"
+}
+
+
+# Test Case 2:
+
+# Input
+Ugbala Gideon works as a data analyst in Toronto.
+
+Output
+
+{
+  "name": "Ugbala Gideon",
+  "age": null,
+  "location": "Toronto",
+  "occupation": "data analyst"
+}
+   # Notice: Age is missing → returns null (correct behavior)
+
+
+# Test Case 3
+
+# Input
+- 42-year-old teacher Unogwu Friday lives in Abuja.
+
+# Output
+
+{
+  "name": "Unogwu Friday",
+  "age": 42,
+  "location": "Abuja",
+  "occupation": "teacher"
+}
+
+
+# Validation Checklist
+
+# Requirement	        Result
+Same keys every time    -   ✔
+Valid JSON	            -   ✔
+Handles missing data	-   ✔
+No extra text	        -   ✔
+Reusable	            -   ✔
+
+This means the prompt is reliable.

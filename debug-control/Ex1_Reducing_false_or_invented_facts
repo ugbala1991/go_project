@@ -1,0 +1,40 @@
+# Exercise 1: Reducing False or Invented Facts
+Objective: Identify and correct prompts that produce wrong or made-up information.
+1. Write a prompt that produces errors (example: “Give the capitals of five imaginary countries.”).
+2. Rewrite the prompt so it only accepts correct data (example: “List five real countries and their capitals.”).
+3. Compare both results and note the differences.
+
+# Prompt:
+Give the capitals of five imaginary countries”. “List five real countries and their capitals.”. Compare both results and note the differences.
+
+# 1. Capitals of Five Imaginary Countries:
+Yandev  — Asa
+Ukum    — Agatu
+Ado     — Utonkon
+Otukpo  — Ogobia
+Okpokwu — Oglewu
+                #These names are invented and do not correspond to real-world nations.
+
+# 2. Five Real Countries and Their Capitals
+Nigeria  — Abuja
+Japan    — Tokyo
+Brazil   — Brasília
+Canada   — Ottawa
+Kenya    — Nairobi
+                #These are verifiable, real-world country capitals.
+
+# 3. Comparison of Results:
+# Imaginary Countries Output:
+- Creative and unconstrained.
+- No requirement for factual accuracy.
+- Names are generated based on language patterns.
+- Cannot be verified in the real world.
+
+# Real Countries Output:
+- Fact-based and verifiable.
+- Must align with real geographic knowledge.
+- Accuracy matters.
+- Constrained by real-world data.
+
+# Key Difference
+The first prompt encourages creative generation, while the second requires factual recall. The imaginary example tests generative ability, whereas the real-country example tests knowledge accuracy and grounding in reality.

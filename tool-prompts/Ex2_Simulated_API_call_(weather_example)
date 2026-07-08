@@ -1,0 +1,72 @@
+# Exercise 2: Simulated API Call (Weather Example)
+Objective: Practice designing prompts that mimic function calls.
+
+1. Create a prompt: “Simulate a weather API response for Paris today.”
+2. Define an expected JSON schema, e.g.:
+
+{
+  "location": "Paris",
+  "temperature_celsius": 18,
+  "condition": "Cloudy"
+}
+3. Test the model with different cities and compare outputs.
+
+# Prompt:
+“Simulate a weather API response for Paris today.” Using expected JSON schema, 
+{ "location": "Paris", "temperature_celsius": 18, "condition": "Cloudy" }. Test the model with different cities and compare outputs.
+
+# 1. Simulated Weather API Response (Paris)
+Using the given JSON schema:
+
+{
+  "location": "Paris",
+  "temperature_celsius": 18,
+  "condition": "Cloudy"
+}
+
+#This represents a properly formatted API-style response because:
+- The keys match the schema
+- The data types are correct (string, number, string)
+- No extra text is included
+
+# 2 Test With Different Cities
+  Lagos:
+{
+  "location": "Lagos",
+  "temperature_celsius": 30,
+  "condition": "Sunny"
+}
+
+  Tokyo:
+{
+  "location": "Tokyo",
+  "temperature_celsius": 12,
+  "condition": "Rainy"
+}
+
+  Toronto:
+{
+  "location": "Toronto",
+  "temperature_celsius": 5,
+  "condition": "Snowy"
+}
+
+# 3. Comparison of Outputs
+  # City	    Structure Followed	    Format Consistency	  Observations
+    Paris	    Yes	                    Exact	                Matches schema perfectly
+    Lagos	    Yes	                    Exact	                Only values changed
+    Tokyo	    Yes	                    Exact	                Correct data types
+    Toronto	  Yes	                    Exact	                Same keys maintained
+
+# What This Shows
+-When a schema is clearly specified:
+-The response becomes predictable
+-The structure stays consistent
+-Only the values vary
+
+#Without a schema, a model might reply in sentences like:
+“Today in Paris it is cloudy and around 18°C.”
+
+# Key Insight
+Providing a JSON schema acts like giving the model a template.
+It constrains the output format, making the result reliable for programs not just for human reading.

@@ -1,0 +1,103 @@
+# Exercise 1: Structured JSON Output
+Objective: Create prompts that produce structured machine-readable output.
+1. Write a prompt that asks for unstructured information (e.g., “List three cities with their populations.”).
+2. Rewrite the prompt to enforce structured JSON output:
+    Example: “Return the following in JSON format: [{city: string, population: number}].”
+3. Test with multiple inputs and verify the JSON stays valid.
+
+# Prompt:
+“List three cities with their populations”. “Return the following in JSON format: [{city: string, population: number}].” Test with multiple inputs and verify the JSON stays valid.
+
+# Original Prompt (Weak)
+“List three cities with their populations.”
+
+# Output
+London - about 9 million people
+Tokyo - about 14 million people
+Paris - about 2 million people
+
+# Problem
+-Not consistent
+-Not machine-readable
+-Words like “about”
+-No fixed structure
+
+# Rewritten Prompt (Structured JSON)
+Return exactly 3 items in valid JSON format using this schema:
+
+[
+  {"city": string, "population": number}
+]
+
+- Use real cities
+-Population must be an integer (no commas, no words like “about”)
+-Do not include any explanation or extra text.
+
+# Output
+[
+  {"city": "Tokyo", "population": 13960000},
+  {"city": "Lagos", "population": 15000000},
+  {"city": "New York", "population": 8419000}
+]
+                    Now a Python program can read it directly.
+
+# Testing With Multiple Inputs
+We now reuse the same prompt pattern but slightly change the request.
+
+# Test A — African Cities
+Prompt addition:
+Use only African cities.
+
+# Output
+
+[
+  {"city": "Lagos", "population": 15000000},
+  {"city": "Cairo", "population": 10230000},
+  {"city": "Nairobi", "population": 4397000}
+]
+
+# Test B — European Cities Prompt addition:
+Prompt addition:
+Use only European cities.
+
+# Output
+
+[
+  {"city": "Berlin", "population": 3769000},
+  {"city": "Madrid", "population": 3223000},
+  {"city": "Rome", "population": 2873000}
+]
+Test C — Capitals Only
+
+Prompt addition:
+Use only national capitals.
+
+# Output
+
+[
+  {"city": "Ottawa", "population": 994800},
+  {"city": "Tokyo", "population": 13960000},
+  {"city": "Canberra", "population": 431000}
+]
+
+
+# Verifying JSON in Python
+Check if the output is valid JSON using Python:
+
+import json
+
+data = '''
+[
+  {"city": "Tokyo", "population": 13960000},
+  {"city": "Lagos", "population": 15000000},
+  {"city": "New York", "population": 8419000}
+]
+'''
+
+parsed = json.loads(data)
+
+print(type(parsed))
+print(parsed[0]["city"])
+
+If the JSON is invalid → Python will throw an error.
+If valid it loads successfully.

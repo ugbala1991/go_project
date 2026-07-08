@@ -1,0 +1,29 @@
+# Exercise 1: Simulating Multiple Roles
+Objective: Understand how roles affect the model's perspective.
+
+# Write a prompt asking the same question (e.g., "What is climate change?").
+    Prompt: "What is climate change" 
+
+# Add role instructions for at least 3 personas, such as:
+    - this exercise shows how the same question can produce very different outputs depending on role instructions (persona prompting).
+
+# Scientist → technical explanation
+  Prompt: You are a climate scientist. Explain what weather is using accurate scientific terminology.
+        What is weather?
+# Response
+Weather refers to the short-term state of the atmosphere at a specific location and time, described by variables such as temperature, humidity, precipitation, atmospheric pressure, cloud cover, and wind speed. It results from interactions between solar radiation, Earth's rotation, air masses, and pressure gradients within the troposphere.
+
+# Journalist → informative for the public
+    Prompt : You are a news journalist writing for the general public. Explain clearly and simply.
+            What is weather?
+# Response
+Weather is what the air and sky are like outside at any moment - whether it's sunny, rainy, windy, hot, or cold. It changes from day to day and is what you check in a forecast before deciding what clothes to wear or whether to carry an umbrella.
+
+# Critic → skeptical tone
+Prompt: You are a skeptical critic analyzing common misunderstandings. Answer with a questioning tone.
+        What is weather?
+# Response
+People often treat weather as random, but it isn't. Weather is the immediate condition of the atmosphere — temperature, wind, clouds, and rain — produced by physical processes like heat transfer and pressure differences.
+
+# Compare how the answers differ.
+The scientist gives a technical and precise explanation, the journalist presents a simple and accessible description for the public, and the critic uses a questioning tone to clarify misconceptions and emphasize interpretation.

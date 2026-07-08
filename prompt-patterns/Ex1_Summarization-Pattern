@@ -1,0 +1,59 @@
+
+# Exercise 1: Summarization Pattern
+Objective: Create a reusable prompt for text summarization.
+
+1. Write a weak prompt: "Summarize this text."
+
+2. Refine it into a reusable pattern:
+    "Summarize the following text in 3 bullet points, focusing on the main arguments and ignoring examples."
+
+3. Test it with at least two different inputs (e.g., a news article and a technical blog).
+
+# Prompts:
+Weak Prompt:
+    "Summarize this text".
+
+# Why It's Weak
+-No length specified
+-No format specified
+-No focus specified
+-No audience specified
+-No instruction about what to ignore
+
+#The output could vary. maybe
+-1 sentence
+-5 paragraphs
+-bullet points
+-detailed or shallow
+-It lacks constraints.
+
+# Refined Reusable Prompt Pattern
+"Summarize the following text in 3 bullet points, focusing only on the main arguments and ignoring examples, anecdotes, and minor details. Keep the summary concise and neutral".
+
+# Why This Is Better
+-Specifies format (3 bullet points)
+-Specifies focus (main arguments)
+-Specifies what to ignore (examples)
+-Specifies tone (neutral)
+-Reusable across domains
+
+# Test With Two Different Inputs
+# Test Input 1: News Article (Example)
+# Input Text:
+“A new government policy introduces tax incentives for small businesses to promote economic recovery. Officials argue it will stimulate job growth and innovation. Critics warn it may increase the budget deficit and disproportionately benefit larger corporations disguised as small firms. The policy will take effect next year.”
+
+# Output Using Refined Prompt
+-The government introduced tax incentives aimed at supporting small businesses and boosting economic recovery.
+-Supporters claim the policy will increase job creation and encourage innovation.
+-Critics argue the plan may raise the budget deficit and favor larger corporations exploiting loopholes.
+
+# Test Input 2: Technical Blog
+# Input Text:
+“Microservices architecture breaks applications into smaller, independent services that communicate over APIs. This improves scalability and deployment flexibility. However, it introduces complexity in monitoring, debugging, and distributed data management. Teams must adopt DevOps practices and automation tools to manage these systems effectively.”
+
+# Output Using Refined Prompt
+- Microservices architecture divides applications into independent services that communicate via APIs.
+- This approach improves scalability and deployment flexibility.
+
+- It increases operational complexity and requires strong DevOps practices and automation 
+  tools

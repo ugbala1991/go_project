@@ -1,0 +1,38 @@
+# Exercise 3: Multi-Step Question Answering
+Objective: Break complex questions into smaller steps.
+1. Select a multi-step question (e.g., "What is 25% of the sum of 40 and 60?").
+2. Create a prompt that asks the model to:
+    -Restate the problem
+    -Break it into smaller steps
+3. Solve each step before giving the final answer
+4. Review the reasoning process and check the accuracy of the final solution.
+
+# Prompt:
+What is 25% of the sum of 50 and 70?". Restate the problem; Break it into smaller steps; Solve each step before giving the final answer. Review the reasoning process and check the accuracy of the final solution.
+
+# Output
+# Restate the problem
+We are asked:
+
+Find 25% of the sum of 50 and 70.
+
+In other words, first we need to add 50 and 70, then take 25% of that total.
+
+# Break into smaller steps
+Step 1: Calculate the sum of 50 and 70
+50 + 70 = 120
+
+Step 2: Find 25% of 120.
+25% means 25 ÷ 100 = 0.25
+0.25 x 120 = 30
+
+# Review and check
+
+Sum: 50 + 70 = 120
+
+Percentage: 25% of 120 = 0.25 x 120 = 30
+
+Everything checks out.
+
+# Final Answer
+25% of the sum of 50 and 70 is equal to 30.

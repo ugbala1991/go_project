@@ -1,0 +1,29 @@
+# Exercise 3: Tone Variation with the Same Task
+- Tone variation with the same task means the core information and purpose remain unchanged, but the
+ wording, formality, and emotional style differ depending on how the prompt instructs the 
+ response to be written.
+
+# 2. Write two prompts:
+#One for a friendly tone
+Prompt 1: Write an email inviting Musa to a gateman interview using friendly tone.
+
+#Output:
+Dear Musa,
+I hope you're doing well.
+We're pleased to invite you for an interview for the Gateman position. We were impressed
+with your application and would love to meet you to discuss the role further and get to 
+know you better.
+
+# One for a professional tone
+Prompt 2: Write an email inviting Musa to a gateman interview using professional tone.
+
+#Output:
+Dear Musa,
+You are hereby invited to attend an interview for the Gateman position. 
+Following a review of your application, we would like to meet with you to further
+ discuss your qualifications and suitability for the role.
+
+# Compare the outputs and note how the tone changes while the content stays consistent.
+Both outputs communicate the same information about the interview invitation, but the 
+first uses warm, conversational language to feel welcoming and informal, while the 
+second uses formal wording and structure to sound more official and professional.
